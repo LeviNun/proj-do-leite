@@ -1,0 +1,53 @@
+Tabelas do banco = Área de produção,
+ doações, 
+ vendas, 
+ relatórios 
+
+
+
+
+
+ ft.DataTable(
+                    width=1020,
+                    height=720,
+                    bgcolor=ft.colors.LIGHT_BLUE_ACCENT,
+                    
+            columns=[
+            
+                ft.DataColumn(ft.Text("Muda")),
+                ft.DataColumn(ft.Text("DataEntrada"),data=True),
+                ft.DataColumn(ft.Text("DataSaída"), data=True),
+               
+            ],
+            rows=[
+                ft.DataRow(
+                    cells=[
+                        ft.DataCell(ft.Text("Samambaia")),
+                        ft.DataCell(ft.Text("19/06/24")),
+                        ft.DataCell(ft.Text("21/07/25")),
+                     
+
+                    ],
+                ),
+                ft.DataRow(
+                    cells=[
+                        ft.DataCell(ft.Text("Cidreira")),
+                        ft.DataCell(ft.Text("10/01/24")),
+                        ft.DataCell(ft.Text("15/09/26")),
+                      
+                    ],
+                ),
+                ft.DataRow(
+                    cells=[
+                        ft.DataCell(ft.Text("Bambu")),
+                        ft.DataCell(ft.Text("03/02/24")),
+                        ft.DataCell(ft.Text("01/06/25")),
+                       
+                    ],
+                ),
+            ],
+        )
+                
+            ], horizontal_alignment='center', alignment='center')
+        )
+    ])
